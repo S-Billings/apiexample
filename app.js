@@ -33,10 +33,11 @@ app.use(function(req, res, next) {
     checkKey(req, res, next);
 });
 
+//key to define a object
 app.get('/', function(req, res) {
     res.send({"authentication": "valid"});
 });
-
+//url\profile and it will complete the request
 app.get("/profile", function(req, res) {
     res.send({"name": user.name, "count": user.contacts.length});
 });
