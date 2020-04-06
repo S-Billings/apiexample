@@ -11,6 +11,7 @@ app.use(cors());
 var user = {};
 var path = "";
 
+//authentication of the request
 function checkKey(req, res, next) {
 
     res.type('application/json');
